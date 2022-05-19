@@ -11,8 +11,6 @@ class MockNumberTriviaRepository extends Mock
 void main() {
   late GetConcreteNumberTrivia useCase;
   late MockNumberTriviaRepository mockNumberTriviaRepository;
-  // late int tNumber;
-  // late NumberTrivia tNumberTrivia;
   setUp(() {
     mockNumberTriviaRepository = MockNumberTriviaRepository();
     useCase = GetConcreteNumberTrivia(
