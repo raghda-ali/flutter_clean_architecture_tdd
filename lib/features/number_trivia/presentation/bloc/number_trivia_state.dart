@@ -9,32 +9,32 @@ class NumberTriviaInitial extends NumberTriviaState {
   List<Object> get props => [];
 }
 
-class Empty extends NumberTriviaState {
+class NumberTriviaEmpty extends NumberTriviaState {
   @override
   // TODO: implement props
   List<Object?> get props => [];
 }
 
-class Loading extends NumberTriviaState {
+class NumberTriviaLoading extends NumberTriviaState {
   @override
   // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [];
 }
 
-class Loaded extends NumberTriviaState {
+class NumberTriviaLoaded extends NumberTriviaState {
   final NumberTrivia numberTrivia;
 
-  const Loaded({required this.numberTrivia});
+  const NumberTriviaLoaded({required this.numberTrivia});
 
   @override
   // TODO: implement props
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [];
 }
 
-class Error extends NumberTriviaState {
+class NumberTriviaFailure extends NumberTriviaState {
   final String errorMessage;
 
-  const Error({required this.errorMessage});
+  const NumberTriviaFailure({required this.errorMessage});
 
   @override
   // TODO: implement props

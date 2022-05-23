@@ -11,7 +11,7 @@ class GetRandomNumberTrivia implements UseCase<NumberTrivia, NoParams> {
   GetRandomNumberTrivia({required this.numberTriviaRepository});
 
   @override
-  Future<Either<Failure, NumberTrivia>?> call(NoParams parameters) async{
+  Future<Either<Failure, NumberTrivia>> call(NoParams parameters) async{
    return await numberTriviaRepository.getRandomNumberTrivia();
   }
 }
