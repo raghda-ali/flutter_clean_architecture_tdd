@@ -16,8 +16,7 @@ void main() {
   // late NumberTrivia tNumberTrivia;
   setUp(() {
     mockNumberTriviaRepository = MockNumberTriviaRepository();
-    useCase = GetRandomNumberTrivia(
-        numberTriviaRepository: mockNumberTriviaRepository);
+    useCase = GetRandomNumberTrivia(mockNumberTriviaRepository);
   });
   const tNumberTrivia = NumberTrivia(text: 'test', number: 1);
   test('should get trivia from the repository', () async {

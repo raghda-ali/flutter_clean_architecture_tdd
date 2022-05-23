@@ -8,7 +8,7 @@ import 'package:equatable/equatable.dart';
 class GetRandomNumberTrivia implements UseCase<NumberTrivia, NoParams> {
   final NumberTriviaRepository numberTriviaRepository;
 
-  GetRandomNumberTrivia({required this.numberTriviaRepository});
+  GetRandomNumberTrivia(this.numberTriviaRepository);
 
   @override
   Future<Either<Failure, NumberTrivia>> call(NoParams parameters) async{
